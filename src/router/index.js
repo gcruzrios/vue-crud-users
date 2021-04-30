@@ -1,11 +1,23 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
+import EditUser from '../views/EditUser.vue'
+import CreateUser from '../views/CreateUser.vue'
 
 const routes = [
   {
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/add',
+    name: 'Add',
+    component: CreateUser
+  },
+  {
+    path: '/edit/:id',
+    name: 'Edit',
+    component: EditUser
   },
   {
     path: '/about',
